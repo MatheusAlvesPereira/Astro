@@ -1,5 +1,5 @@
 {
-  "name": "orbital-orbit",
+  "name": "radiant-ring",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,7 +10,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "accessible-astro-components": "^2.1.3",
-    "astro": "^2.10.14"
+    "astro": "^2.10.14",
+    "astro-analytics": "^2.6.0"
+  },
+  "devDependencies": {
+    "@astrojs/partytown": "^1.2.3"
   }
 }

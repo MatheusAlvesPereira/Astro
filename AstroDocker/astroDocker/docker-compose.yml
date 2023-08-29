@@ -1,0 +1,15 @@
+version: '3'
+services:
+  astro:
+    image: node:14 # Ou a imagem que você deseja usar
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: npm start # Comando para iniciar o Astro
+
+  web:
+    image: nginx:latest # Ou outro servidor web
+    ports:
+      - "8080:80" # Mapeamento de porta host para porta do contêiner
+    depends_on:
+      - astro
